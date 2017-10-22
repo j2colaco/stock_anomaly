@@ -3,10 +3,7 @@ import csv
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import collections
-from random import randint
 
-from matplotlib import style
 
 
 def read_csv(file_name, date_pos, price_pos):
@@ -42,18 +39,17 @@ def moving_average(y,x, window_size=3):
 def get_stationary_anomaly(rel_x, rel_y, avg, sigma):
     residual = rel_y - avg
     residual_std = np.std(residual)
-    print('The std dev is ', residual_std)
+    print('The std dev*sigma is ', residual_std*sigma)
     rel_y_avg = zip(rel_y, avg)
 
-    count = 0
     anomaly_list = []
     for i in range(0,len(rel_y)-1,1):
         if (rel_y[i] > avg[i] + residual_std*sigma) | (rel_y[i] < avg[i] - residual_std*sigma):
-            anomaly_list.append([rel_x[i], rel_y[i], rel_y[i+1], rel_y[i+5]])
-
+            # anomaly_list.append([rel_x[i], rel_y[i], rel_y[i+1], rel_y[i+5]])
+            anomaly_list.append([rel_x[i], rel_y[i]])
     return np.array(anomaly_list)
 
-def plot_stuff(x,y, rel_x, rel_y, avg, anomaly_list):
+def plot_stuff(x,y, rel_x, avg, anomaly_list):
 
     plt.figure(figsize=(15, 8))
     plt.plot(x, y)
@@ -63,17 +59,32 @@ def plot_stuff(x,y, rel_x, rel_y, avg, anomaly_list):
 
 def get_roll_anomaly(rel_x, rel_y, avg, window_size, sigma):
 
+    rel_rel_x = rel_x[window_size:]
+    rel_rel_y = rel_y[window_size:]
+    rel_avg = avg[window_size:]
+
     residual = pd.DataFrame(rel_y - avg)
     roll_std = residual.rolling(window=window_size,center=False).std()
-    print(roll_std)
     roll_std = roll_std[window_size-1:len(roll_std)-1]
-    print(roll_std)
+    roll_std = np.array(roll_std)
+
+    print('The length of rel_rel_x, rel_rel_y, roll_std and rel_avg are', len(rel_rel_x), len(rel_rel_y), len(roll_std), len(rel_avg))
+
+    # print(type(roll_std))
+    roll_anomaly_list = []
+    for i in range(0, len(rel_rel_y) - 1, 1):
+        if (rel_rel_y[i] > rel_avg[i] + roll_std[i]*sigma) | (rel_rel_y[i] < rel_avg[i] - roll_std[i]*sigma):
+            roll_anomaly_list.append([rel_rel_x[i], rel_rel_y[i]])
+            # roll_anomaly_list.append([rel_rel_x[i], rel_rel_y[i], rel_rel_y[i+1], rel_rel_y[i+5]])
+    roll_anomaly_list = np.array(roll_anomaly_list)
+
+    return rel_rel_x, rel_rel_x, rel_avg, roll_anomaly_list
 
 
 if __name__ == '__main__':
 
-    sigma = 2.5
-    window_size = 10
+    sigma = 2
+    window_size = 20
 
     # Read all the stock data from the csv file
     x, y = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\MFC.TO2', 0, 1)
@@ -83,7 +94,9 @@ if __name__ == '__main__':
     stationary_anomaly = get_stationary_anomaly(rel_x, rel_y, avg, sigma)
     print(len(stationary_anomaly))
 
-    roll_anomaly = get_roll_anomaly(rel_x, rel_y, avg, window_size, sigma)
+    rel_rel_x, rel_rel_y, rel_avg, roll_anomaly = get_roll_anomaly(rel_x, rel_y, avg, window_size, sigma)
 
-    # plot_stuff(x,y, rel_x, rel_y, avg, stationary_anomaly)
+    # plot_stuff(x,y, rel_x, avg, stationary_anomaly)
+    # plot_stuff(x,y,rel_rel_x, rel_avg, roll_anomaly)
 
+    # w_file = open('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\anomaly' + '.csv','wb')

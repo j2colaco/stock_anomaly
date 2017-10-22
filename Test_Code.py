@@ -17,3 +17,5 @@ c = c[:len(c)-1]
 print(c)
 
 print(len(a))
+
+# print(datetime.today())
