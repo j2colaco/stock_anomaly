@@ -1,6 +1,19 @@
+#code source: https://www.datascience.com/blog/python-anomaly-detection
+import csv
+import pandas as pd
+import matplotlib.pyplot as plt
 import numpy as np
+import collections
+from random import randint
 
-x =np.array([5,4])
-y = np.array([5,4])
+from matplotlib import style
 
-print(np.multiply(x,y))
+
+a = [1,2,3,4,5,6]
+b = [1,1,1]
+
+c = np.convolve(a,b, 'valid')
+c = c[:len(c)-1]
+print(c)
+
+print(len(a))

@@ -29,67 +29,61 @@ def read_csv(file_name, date_pos, price_pos):
     return x, y
 
 
-def moving_average(y, window_size=3):
+def moving_average(y,x, window_size=3):
     window = np.ones(int(window_size))/float(window_size)
-    moving_avg = np.convolve(y, window, 'same')
-    return moving_avg.tolist()
+    # print(window_size)
+    rel_y = y[window_size:]
+    rel_x = x[window_size:]
+    moving_avg = np.convolve(y, window, 'valid')
+    moving_avg = moving_avg[:len(moving_avg)-1]
+    print('length of rel_y, rel_x and moving average arrays are ', len(rel_y), len(rel_x),len(moving_avg))
+    return rel_x, rel_y, moving_avg
 
-x, y = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\MFC.TO2', 0, 1)
+def get_stationary_anomaly(rel_x, rel_y, avg, sigma):
+    residual = rel_y - avg
+    residual_std = np.std(residual)
+    print('The std dev is ', residual_std)
+    rel_y_avg = zip(rel_y, avg)
 
-c = moving_average(y,10)
-# print(c)
+    count = 0
+    anomaly_list = []
+    for i in range(0,len(rel_y)-1,1):
+        if (rel_y[i] > avg[i] + residual_std*sigma) | (rel_y[i] < avg[i] - residual_std*sigma):
+            anomaly_list.append([rel_x[i], rel_y[i], rel_y[i+1], rel_y[i+5]])
 
+    return np.array(anomaly_list)
 
-residue = y - c
-residue_std = np.std(residue)
-# print(residue_std)
+def plot_stuff(x,y, rel_x, rel_y, avg, anomaly_list):
 
-izip = zip
-zipped = zip(y, c)
-# for a,b in zipped:
-#     print(a,b)
+    plt.figure(figsize=(15, 8))
+    plt.plot(x, y)
+    plt.plot(rel_x, avg, color='green')
+    plt.plot(anomaly_list[:,0], anomaly_list[:,1], "r*", markersize=12)
+    plt.show()
 
-sigma = 1.5
-count = 0
-anomaly_list = []
-anomaly_date = []
-for a,b in zipped:
-    if (a > b + residue_std*sigma):
-        # print('High anomaly: ', a, ' @', x[count])
-        anomaly_list.append(1)
-        anomaly_date.append([x[count], a])
-    elif (a < b - residue_std*sigma):
-        # print('Low anomaly: ', a, ' @', x[count])
-        anomaly_list.append(1)
-        anomaly_date.append([x[count], a])
-    else:
-        anomaly_list.append(0)
-    count += 1
+def get_roll_anomaly(rel_x, rel_y, avg, window_size, sigma):
 
-# for i in anomaly_list:
-#     print(i)
-
-
-b = np.multiply(anomaly_list,y)
-print(b)
-
-an_date = []
-an_price = []
-for a in anomaly_date:
-    an_date.append(a[0])
-    an_price.append(a[1])
-
-an_date2 = np.array(an_date, dtype='datetime64')
-# print(an_date2[1])
-
-plt.figure(figsize=(15, 8))
-plt.plot(x, y)
-y_moving_average = moving_average(y, 5)
-plt.plot(x, y_moving_average, color='green')
-plt.plot(an_date2, an_price, "r*", markersize=12)
-plt.show()
+    residual = pd.DataFrame(rel_y - avg)
+    roll_std = residual.rolling(window=window_size,center=False).std()
+    print(roll_std)
+    roll_std = roll_std[window_size-1:len(roll_std)-1]
+    print(roll_std)
 
 
-#Test moving average using discrete convolution
-# nn = np.convolve([4,4,4,5,6,7,8,10], [.33, 1,.33], 'same')
-# print(nn)
+if __name__ == '__main__':
+
+    sigma = 2.5
+    window_size = 10
+
+    # Read all the stock data from the csv file
+    x, y = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\MFC.TO2', 0, 1)
+
+    rel_x, rel_y, avg = moving_average(y, x, window_size)
+
+    stationary_anomaly = get_stationary_anomaly(rel_x, rel_y, avg, sigma)
+    print(len(stationary_anomaly))
+
+    roll_anomaly = get_roll_anomaly(rel_x, rel_y, avg, window_size, sigma)
+
+    # plot_stuff(x,y, rel_x, rel_y, avg, stationary_anomaly)
+
