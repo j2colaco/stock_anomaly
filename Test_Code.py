@@ -1,21 +1,14 @@
-#code source: https://www.datascience.com/blog/python-anomaly-detection
-import csv
-import pandas as pd
+import datetime as dt
 import matplotlib.pyplot as plt
-import numpy as np
-import collections
-from random import randint
-
 from matplotlib import style
+import pandas as pd
+import pandas_datareader as web
 
+style.use('ggplot')
 
-a = [1,2,3,4,5,6]
-b = [1,1,1]
+start = dt.datetime(2000,1,1)
+end = dt.datetime(2016, 12, 31)
 
-c = np.convolve(a,b, 'valid')
-c = c[:len(c)-1]
-print(c)
-
-print(len(a))
-
-# print(datetime.today())
+df = web.DataReader('MFC.TO', 'yahoo', start, end)
+print(df.tail(6))
+# print('hi')

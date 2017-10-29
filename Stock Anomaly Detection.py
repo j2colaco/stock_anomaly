@@ -38,6 +38,9 @@ def moving_average(y,x, window_size=3):
 
 def get_stationary_anomaly(rel_x, rel_y, avg, sigma):
     residual = rel_y - avg
+    print(residual)
+    residual = np.absolute(residual)
+    print(residual)
     residual_std = np.std(residual)
     print('The std dev*sigma is ', residual_std*sigma)
     rel_y_avg = zip(rel_y, avg)
@@ -54,7 +57,7 @@ def plot_stuff(x,y, rel_x, avg, anomaly_list):
     plt.figure(figsize=(15, 8))
     plt.plot(x, y)
     plt.plot(rel_x, avg, color='green')
-    plt.plot(anomaly_list[:,0], anomaly_list[:,1], "r*", markersize=12)
+    plt.plot(anomaly_list[:,0], anomaly_list[:,1], "r*", makersize=12)
     plt.show()
 
 def get_roll_anomaly(rel_x, rel_y, avg, window_size, sigma):
@@ -85,18 +88,20 @@ if __name__ == '__main__':
 
     sigma = 2
     window_size = 20
+    # roll_window_size = 50
 
     # Read all the stock data from the csv file
-    x, y = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\MFC.TO2', 0, 1)
+    x, y = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\MFC.TO', 0, 1)
 
     rel_x, rel_y, avg = moving_average(y, x, window_size)
 
     stationary_anomaly = get_stationary_anomaly(rel_x, rel_y, avg, sigma)
     print(len(stationary_anomaly))
 
+
     rel_rel_x, rel_rel_y, rel_avg, roll_anomaly = get_roll_anomaly(rel_x, rel_y, avg, window_size, sigma)
 
-    # plot_stuff(x,y, rel_x, avg, stationary_anomaly)
-    # plot_stuff(x,y,rel_rel_x, rel_avg, roll_anomaly)
+    plot_stuff(x,y, rel_x, avg, stationary_anomaly)
+    plot_stuff(x,y,rel_rel_x, rel_avg, roll_anomaly)
 
     # w_file = open('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\anomaly' + '.csv','wb')
