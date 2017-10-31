@@ -8,7 +8,7 @@ import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 import time
 
-def read_csv(file_name, symbol_pos, name_pos):
+def read_csv(file_name):
     read_file = open(file_name + '.csv', 'r', encoding='latin1')
     csv_read = csv.reader(read_file)
 
@@ -27,9 +27,11 @@ def moving_average(x, y, window_size):
     window = np.ones(int(window_size)) / float(window_size)
     rel_y = y[window_size:]
     rel_x = x[window_size:]
+
     moving_avg = np.convolve(y, window, 'valid')
     moving_avg = moving_avg[:len(moving_avg) - 1]
-    # print('length of rel_y, rel_x and moving average arrays are ', len(rel_y), len(rel_x), len(moving_avg))
+    print('length of rel_y, rel_x and moving average arrays are ', len(rel_y), len(rel_x), len(moving_avg))
+    print(rel_x)
     return rel_x, rel_y, moving_avg
 
 def get_roll_anomaly(stock_name, rel_x, rel_y, avg, window_size, sigma):
@@ -49,7 +51,7 @@ def get_roll_anomaly(stock_name, rel_x, rel_y, avg, window_size, sigma):
 
     roll_anomaly_list = []
     roll_all_data = []
-    for i in range(0, len(rel_rel_y) - 1, 1):
+    for i in range(0, len(rel_rel_y), 1):
         if (rel_rel_y[i] > rel_avg[i] + roll_std[i]*sigma):
             if (i + 30 <= len(rel_rel_y) - 1):
                 roll_anomaly_list.append(
@@ -145,14 +147,15 @@ def get_anomaly(stock_name, df, window_size, sigma):
     close_df = close_df.dropna()
     # print('This is close_df', close_df['Close'].count())
 
+    # print(close_df)
+
     data = np.array(close_df)
-    # print(data)
 
     rel_x, rel_y, avg = moving_average(data[:, 0], data[:, 1], window_size)
 
     rel_rel_x, rel_rel_y, rel_avg, roll_anomaly = get_roll_anomaly(stock_name, rel_x, rel_y, avg, window_size, sigma)
 
-    roll_anomaly_avg = manipulate_data(roll_anomaly)
+    # roll_anomaly_avg = manipulate_data(roll_anomaly)
 
     # plot_stuff(data[:,0], data[:,1], roll_anomaly)
 
@@ -161,10 +164,11 @@ def get_anomaly(stock_name, df, window_size, sigma):
 if __name__ == '__main__':
 
     t0 = time.time()
-    stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\test', 0, 1)
+    stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\test')
+    # stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\S&P.TSX 1 col', 0, 1)
 
     window_size = 10
-    sigma = 5
+    sigma = 6
     years_of_data = 3
     roll_anomaly_output = []
 
@@ -177,10 +181,11 @@ if __name__ == '__main__':
     else:
         end = dt.datetime.today().date()
 
-    end = dt.datetime.today().date()
+    end = dt.datetime(2017, 10, 30)
     start = dt.datetime(int(dt.datetime.today().year - years_of_data),int(dt.datetime.today().month), int(dt.datetime.today().day)).date()
 
     didnt_work = []
+    didnt_work2 = []
     worked = []
     # print(web.DataReader(stock_symbol[0], 'yahoo', start, end))
     for stock in stock_symbol:
@@ -189,18 +194,29 @@ if __name__ == '__main__':
             df = web.DataReader(stock, 'yahoo', start, end)
             print(stock)
             worked.append(stock)
+            roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
 
         except:
             didnt_work.append(stock)
             print(stock, 'didnt work')
             continue
 
-        roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
+    for stock in didnt_work:
 
+        try:
+            df = web.DataReader(stock, 'yahoo', start, end)
+            print(stock)
+            worked.append(stock)
+            roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
+
+        except:
+            didnt_work2.append(stock)
+            print(stock, 'didnt work again')
+            continue
 
     print('Writing Output')
     w_file = open('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\Results_' + str(dt.datetime.today().date()) + '.csv', 'w', newline='', encoding="latin1")
     write_csv(csv.writer(w_file), roll_anomaly_output,['Stock Symbol', 'Date', 'Price', '1day', '3day', '5day', '10day', '30day', 'Residual Std Dev', 'Upper Bound', 'Lower Bound', 'Type'])
-    # print(didnt_work)
+    print(didnt_work2)
     t1 = time.time()
-    print('Time to run code:', t1-t0)
+    print('Time to run code:', (t1-t0)/60, 'minutes')
