@@ -7,6 +7,7 @@ import pandas as pd
 import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 import time
+import xlsxwriter
 
 def read_csv(file_name):
     read_file = open(file_name + '.csv', 'r', encoding='latin1')
@@ -137,21 +138,62 @@ def write_csv(w_file, roll_anomaly, header):
         # print(line)
         w_file.writerow(line)
 
-def manipulate_data(roll_anomally):
+def manipulate_data(roll_anomally, wb):
 
     df = pd.DataFrame(roll_anomally, columns=['stock_name', 'date', 'price', '1day', '2day', '3day', '5day', '10day', '30day', 'std', 'upper_bound', 'lower_bound', 'type'])
-    new_df = df[df['type']== 'Low']
-    new_df2 = df[df['type']== 'High']
+    low_df = df[df['type']== 'Low']
+    high_df = df[df['type']== 'High']
     # print(new_df)
 
-    # low_df = new_df[["1day", "3day", "5day", "10day", "30day"]].groupby(['stock_name'], axis=0).mean()
-    # low_df = new_df[['1day']].groupby('stock_name')
-    # df[['col1', 'col2', 'avg']].groupby('col1', 'col2').mean()
-    # high_df = new_df2[["1day", "3day", "5day", "10day", "30day"]].mean(axis=0)
-    # median_low_df = new_df[["1day", "3day", "5day", "10day", "30day"]].median(axis=0)
-    # median_high_df = new_df2[["1day", "3day", "5day", "10day", "30day"]].median(axis=0)
+    # low = low_df.groupby('stock_name').agg({'1day': np.nanmean, '1day': np.nanmedian, '2day': np.nanmean, '2day': np.nanmedian, '3day': np.nanmean, '3day': np.nanmedian, '5day': np.nanmean, '5day': np.nanmedian, '10day': np.nanmean, '10day': np.nanmedian, '30day': np.nanmean, '30day': np.nanmedian})
+    low_mean = low_df.groupby('stock_name').agg({'1day': np.nanmean, '2day': np.nanmean, '3day': np.nanmean, '5day': np.nanmean, '10day': np.nanmean, '30day': np.nanmean}).reset_index()
+    high_mean = high_df.groupby('stock_name').agg({'1day': np.nanmean, '2day': np.nanmean, '3day': np.nanmean, '5day': np.nanmean, '10day': np.nanmean, '30day': np.nanmean}).reset_index()
+    low_median = low_df.groupby('stock_name').agg({'1day': np.nanmedian, '2day': np.nanmedian, '3day': np.nanmedian, '5day': np.nanmedian, '10day': np.nanmedian, '30day': np.nanmedian}).reset_index()
+    high_median = low_df.groupby('stock_name').agg({'1day': np.nanmedian, '2day': np.nanmedian, '3day': np.nanmedian, '5day': np.nanmedian, '10day': np.nanmedian, '30day': np.nanmedian}).reset_index()
 
-    # new_df = df.groupby('stock_name').agg({'1day': np.average, '3day': np.average, '5day': np.average, '10day': np.average, '30day': np.average})
+    low_mean_ws = wb.add_worksheet('Low Average')
+    low_median_ws = wb.add_worksheet('Low Median')
+    high_mean_ws = wb.add_worksheet('High Average')
+    high_median_ws = wb.add_worksheet('High Median')
+
+    write_xlsx(low_mean, low_mean_ws, ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
+    write_xlsx(low_median, low_median_ws,
+               ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
+    write_xlsx(high_median, high_median_ws,
+               ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
+    write_xlsx(high_mean, high_mean_ws,
+               ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
+    # print(low_mean)
+
+def write_xlsx(df, ws, header):
+    row = 0
+    col = 0
+
+    for i in header:
+        ws.write(row, col, i)
+        col += 1
+    col = 0
+    row = 1
+
+    for a in df.values:
+        # print(a)
+        for i in range(0, len(a), 1):
+            print(a[i])
+            ws.write(row, col, a[i])
+            col += 1
+        col = 0
+        row += 1
+
+    # for a,b,c,d,e,f,g in df.values:
+    #     ws.write(row, col, a)
+    #     ws.write(row, col+1, b)
+    #     ws.write(row, col + 2, c)
+    #     ws.write(row, col + 3, d)
+    #     ws.write(row, col + 4, e)
+    #     ws.write(row, col + 5, f)
+    #     ws.write(row, col + 6, g)
+    #     row += 1
+
 
 
 def get_anomaly(stock_name, df, window_size, sigma):
@@ -175,9 +217,10 @@ def get_anomaly(stock_name, df, window_size, sigma):
 
 if __name__ == '__main__':
 
+
     t0 = time.time()
-    # stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\test')
-    stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\S&P.TSX 1 col')
+    stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\test')
+    # stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\S&P.TSX 1 col')
 
     window_size = 10
     sigma = 5.5
@@ -197,44 +240,58 @@ if __name__ == '__main__':
 
     didnt_work = []
     didnt_work2 = []
+    not_enff_data = []
     worked = []
+    wb = xlsxwriter.Workbook(
+        'C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\Manipulated_Results_' + str(
+            dt.datetime.today().date()) + '.xlsx')
+
     # print(web.DataReader(stock_symbol[0], 'yahoo', start, end))
     for stock in stock_symbol:
 
         try:
             df = web.DataReader(stock, 'yahoo', start, end)
+            if len(df) < 21:
+                not_enff_data.append(stock)
+                continue
             print(stock)
             worked.append(stock)
-            roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
 
         except:
             didnt_work.append(stock)
             print(stock, 'didnt work')
             continue
 
+        roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
 
+    roll_anomaly_avg = manipulate_data(roll_anomaly_output, wb)
 
-
-
-    # roll_anomaly_avg = manipulate_data(roll_anomaly_output)
-    for stock in didnt_work:
-
-        try:
-            df = web.DataReader(stock, 'yahoo', start, end)
-            print(stock)
-            worked.append(stock)
-            roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
-
-        except:
-            didnt_work2.append(stock)
-            print(stock, 'didnt work again')
-            continue
+    # for stock in didnt_work:
+    #
+    #     try:
+    #         df = web.DataReader(stock, 'yahoo', start, end)
+    #         if len(df) < 21:
+    #             not_enff_data.append(stock)
+    #             continue
+    #         print(stock)
+    #         worked.append(stock)
+    #         roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
+    #
+    #     except:
+    #         didnt_work2.append(stock)
+    #         print(stock, 'didnt work again')
+    #         continue
 
 
 
     print('Writing Output')
     w_file = open('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\Results_' + str(dt.datetime.today().date()) + '.csv', 'w', newline='', encoding="latin1")
     write_csv(csv.writer(w_file), roll_anomaly_output,['Stock Symbol', 'Date', 'Price', '1day', '2day', '3day', '5day', '10day', '30day', 'Residual Std Dev', 'Upper Bound', 'Lower Bound', 'Type'])
-    print(didnt_work2)
+    # all_anomalies_ws = wb.add_worksheet('All_Anomalies')
+    # write_xlsx(pd.DataFrame(roll_anomaly_output), all_anomalies_ws,
+               # ['Symbol', 'Date', 'Price', '1day', '2day', '3day', '5day', '10day', '30day', 'Residual Std Dev', 'Upper Bound', 'Lower Bound', 'Type'])
+    wb.close()
+    print('These didnt work', didnt_work2)
+    print('Not enough data', not_enff_data)
     t1 = time.time()
     print('Time to run code:', (t1-t0)/60, 'minutes')
