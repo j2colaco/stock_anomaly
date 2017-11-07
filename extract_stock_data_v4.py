@@ -149,7 +149,7 @@ def manipulate_data(roll_anomally, wb):
     low_mean = low_df.groupby('stock_name').agg({'1day': np.nanmean, '2day': np.nanmean, '3day': np.nanmean, '5day': np.nanmean, '10day': np.nanmean, '30day': np.nanmean}).reset_index()
     high_mean = high_df.groupby('stock_name').agg({'1day': np.nanmean, '2day': np.nanmean, '3day': np.nanmean, '5day': np.nanmean, '10day': np.nanmean, '30day': np.nanmean}).reset_index()
     low_median = low_df.groupby('stock_name').agg({'1day': np.nanmedian, '2day': np.nanmedian, '3day': np.nanmedian, '5day': np.nanmedian, '10day': np.nanmedian, '30day': np.nanmedian}).reset_index()
-    high_median = low_df.groupby('stock_name').agg({'1day': np.nanmedian, '2day': np.nanmedian, '3day': np.nanmedian, '5day': np.nanmedian, '10day': np.nanmedian, '30day': np.nanmedian}).reset_index()
+    high_median = high_df.groupby('stock_name').agg({'1day': np.nanmedian, '2day': np.nanmedian, '3day': np.nanmedian, '5day': np.nanmedian, '10day': np.nanmedian, '30day': np.nanmedian}).reset_index()
 
     low_mean_ws = wb.add_worksheet('Low Average')
     low_median_ws = wb.add_worksheet('Low Median')
@@ -219,8 +219,8 @@ if __name__ == '__main__':
 
 
     t0 = time.time()
-    stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\test')
-    # stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\S&P.TSX 1 col')
+    # stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\test')
+    stock_symbol = read_csv('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\S&P.TSX 1 col')
 
     window_size = 10
     sigma = 5.5
@@ -255,6 +255,7 @@ if __name__ == '__main__':
                 not_enff_data.append(stock)
                 continue
             print(stock)
+            roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
             worked.append(stock)
 
         except:
@@ -262,27 +263,27 @@ if __name__ == '__main__':
             print(stock, 'didnt work')
             continue
 
-        roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
+
+
+
+
+    for stock in didnt_work:
+
+        try:
+            df = web.DataReader(stock, 'yahoo', start, end)
+            if len(df) < 21:
+                not_enff_data.append(stock)
+                continue
+            print(stock)
+            roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
+            worked.append(stock)
+
+        except:
+            didnt_work2.append(stock)
+            print(stock, 'didnt work again')
+            continue
 
     roll_anomaly_avg = manipulate_data(roll_anomaly_output, wb)
-
-    # for stock in didnt_work:
-    #
-    #     try:
-    #         df = web.DataReader(stock, 'yahoo', start, end)
-    #         if len(df) < 21:
-    #             not_enff_data.append(stock)
-    #             continue
-    #         print(stock)
-    #         worked.append(stock)
-    #         roll_anomaly_output = roll_anomaly_output + get_anomaly(stock, df, window_size, sigma)
-    #
-    #     except:
-    #         didnt_work2.append(stock)
-    #         print(stock, 'didnt work again')
-    #         continue
-
-
 
     print('Writing Output')
     w_file = open('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\Results_' + str(dt.datetime.today().date()) + '.csv', 'w', newline='', encoding="latin1")

@@ -40,17 +40,32 @@ import xlsxwriter
 # df = web.DataReader('CIBC.TO', 'yahoo', start, end)
 # print(df)
 
-a = [2,3,4,5,6]
-workbook = xlsxwriter.Workbook('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\Results.xlsx')
-worksheet = workbook.add_worksheet('Low Average')
-worksheet2 = workbook.add_worksheet('Low Median')
+# a = [2,3,4,5,6]
+# workbook = xlsxwriter.Workbook('C:\\Users\\Joash\\Desktop\\University Stuff\\Personal Projects\\Stock Anomaly Detection\\stock_anomaly\\Data\\Results.xlsx')
+# worksheet = workbook.add_worksheet('Low Average')
+# worksheet2 = workbook.add_worksheet('Low Median')
+#
+# row = 0
+# col = 0
+#
+# for b in a:
+#     worksheet.write(row, col, b)
+#     row += 1
+#
+# workbook.close()
+# Ensures that only Mon-Fri dates are used
+years_of_data = 2
+weekday = dt.datetime.today().weekday()
+if (weekday == 5):
+    end = dt.datetime.now() - timedelta(days=1)
+elif (weekday == 6):
+    end = dt.datetime.now() - timedelta(days=2)
+else:
+    end = dt.datetime.today().date()
 
-row = 0
-col = 0
+start = dt.datetime(int(dt.datetime.today().year - years_of_data), int(dt.datetime.today().month),
+                    int(dt.datetime.today().day)).date()
 
-for b in a:
-    worksheet.write(row, col, b)
-    row += 1
-
-workbook.close()
-
+print(start, end)
+df = web.DataReader('MFC.TO', 'yahoo', start, end)
+print(df)
