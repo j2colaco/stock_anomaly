@@ -176,9 +176,7 @@ def write_xlsx(df, ws, header):
     row = 1
 
     for a in df.values:
-        # print(a)
         for i in range(0, len(a), 1):
-            print(a[i])
             ws.write(row, col, a[i])
             col += 1
         col = 0
