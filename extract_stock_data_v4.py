@@ -158,9 +158,9 @@ def manipulate_data(roll_anomally, wb):
 
     write_xlsx(low_mean, low_mean_ws, ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
     write_xlsx(low_median, low_median_ws,
-               ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
+               ['Symbol', '1day_med', '2day_med', '3day_med', '5day_med', '10day_med', '30day_med'])
     write_xlsx(high_median, high_median_ws,
-               ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
+               ['Symbol', '1day_med', '2day_med', '3day_med', '5day_med', '10day_med', '30day_med'])
     write_xlsx(high_mean, high_mean_ws,
                ['Symbol', '1day_avg', '2day_avg', '3day_avg', '5day_avg', '10day_avg', '30day_avg'])
     # print(low_mean)
@@ -181,17 +181,6 @@ def write_xlsx(df, ws, header):
             col += 1
         col = 0
         row += 1
-
-    # for a,b,c,d,e,f,g in df.values:
-    #     ws.write(row, col, a)
-    #     ws.write(row, col+1, b)
-    #     ws.write(row, col + 2, c)
-    #     ws.write(row, col + 3, d)
-    #     ws.write(row, col + 4, e)
-    #     ws.write(row, col + 5, f)
-    #     ws.write(row, col + 6, g)
-    #     row += 1
-
 
 
 def get_anomaly(stock_name, df, window_size, sigma):
@@ -260,9 +249,6 @@ if __name__ == '__main__':
             didnt_work.append(stock)
             print(stock, 'didnt work')
             continue
-
-
-
 
 
     for stock in didnt_work:
