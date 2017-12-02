@@ -54,18 +54,23 @@ import xlsxwriter
 #
 # workbook.close()
 # Ensures that only Mon-Fri dates are used
-years_of_data = 2
-weekday = dt.datetime.today().weekday()
-if (weekday == 5):
-    end = dt.datetime.now() - timedelta(days=1)
-elif (weekday == 6):
-    end = dt.datetime.now() - timedelta(days=2)
-else:
-    end = dt.datetime.today().date()
-
-start = dt.datetime(int(dt.datetime.today().year - years_of_data), int(dt.datetime.today().month),
-                    int(dt.datetime.today().day)).date()
-
-print(start, end)
-df = web.DataReader('MFC.TO', 'yahoo', start, end)
-print(df)
+# years_of_data = 2
+# weekday = dt.datetime.today().weekday()
+# if (weekday == 5):
+#     end = dt.datetime.now() - timedelta(days=1)
+# elif (weekday == 6):
+#     end = dt.datetime.now() - timedelta(days=2)
+# else:
+#     end = dt.datetime.today().date()
+#
+# start = dt.datetime(int(dt.datetime.today().year - years_of_data), int(dt.datetime.today().month),
+#                     int(dt.datetime.today().day)).date()
+#
+# print(start, end)
+# df = web.DataReader('MFC.TO', 'yahoo', start, end)
+# print(df)
+b = 3
+a = [10, 12, 3, 3, 23, 10]
+a = pd.DataFrame(a)
+c = a.rolling(window=b, center=False).median()
+print(c[b-1:len(c)-1])
