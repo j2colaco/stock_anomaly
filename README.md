@@ -33,5 +33,17 @@ In order to run the model, the investor has to provide an input file. Let's look
 The model takes in one input file (csv) which must contain a column of stock symbols (in the format that Yahoo Finance identifies stocks symbols). Paste this filepath into the code and the coumn index of the stock symbols. 
 
 ### Output File
-Run the code and it will do EVERYTHING for you. The code will output a csv file contai
+Run the code and it will do EVERYTHING for you. The code will output a csv file in the same directory of the input file.
+
+## How does it identify anomalies?
+
+This model detects anomalous stock prices based on 10 day Moving Average. The residual standard deviation for 10 days of historical data is calculated as well.
+
+Anomaly if: Current Stock Price > Moving Average + Residual Std Dev * 5.5
+
+5.5 is the threshold value that I decided to use. If you want bigger or smaller anomalies, change the threshold.
+
+## Performance
+
+For a list of 250 stocks, the model take about 8 minutes to run. I am working on improving the performance of this model.
  
