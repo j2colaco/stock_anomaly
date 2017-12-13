@@ -18,9 +18,20 @@ You recently came across some money and are looking to invest. After a period of
     
 ### SUMMING IT UP
   
-My stock_anomaly model will help users keep track of a list of stocks and if the any of those individual stocks have had a low or high anomaly in it's price. If a certain stock's price, like Manulife Financial for example, increases or drops more than its is predicted to drop based on historical data, investor will want to know that fact. Keeping track of one stock investors are interested in is easy. However, investors are generally interested in a list of stocks and are just waiting for the right time to buy or have some extra money available to spend.Thus I coded this model that detects anomalies in stocks.
+My stock_anomaly model will help users keep track of a list of stocks and if the any of those individual stocks have had a low or high anomaly in it's price. If a certain stock's price, like Manulife Financial for example, increases or drops more than it usually should based on historical data, investors will want to know that fact. Keeping track of one stock that investors are interested in is EASY. However, investors are generally interested in SEVERAL stocks and are just waiting for the right time to buy or have some extra money available to invest.Thus I coded this model that detects anomalies in stocks for investors.
     
 ## How does it work? How do I use the model?
 
-  Let's look at the input and output files
+Based on the list of stock symbols provided, the code will extract 3 years of historical data and identify all the anomalous prices of each stock over the three years. This will help investors learn how volatile the stock has been over the past three years. 
+
+Furthermore, for each anomaly, the difference in the anomalous price and the price of that stock 1,2,3,5,10 and 30 days after the anomaly has occured are stored for the investor. The investor can then analyze how much the price fluctuates after an anomaly occurs. 
+
+In order to run the model, the investor has to provide an input file. Let's look at the input and output files.
+
+### Input File
+
+The model takes in one input file (csv) which must contain a column of stock symbols (in the format that Yahoo Finance identifies stocks symbols). Paste this filepath into the code and the coumn index of the stock symbols. 
+
+### Output File
+Run the code and it will do EVERYTHING for you. The code will output a csv file contai
  
