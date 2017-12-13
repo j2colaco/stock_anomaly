@@ -1,0 +1,830 @@
+Name 1,Stock Symbol,Sector 1
+Brookfield Renewable Power Preferred Equity Inc.,BRF-PC.TO,Clean Technology
+Dundee Corporation,DC-A.TO,Financial Services
+Atlantic Power Preferred Equity Ltd.,AZP-PA.TO,Clean Technology
+Brookfield Renewable Partners L.P.,BEP-UN.TO,Clean Technology
+Brookfield Infrastructure Partners L.P.,BIP-UN.TO,Industrial Products & Services
+Atco Ltd.,ACO-X.TO,Utilities & Pipelines
+Andrew Peller Limited/Andrew Peller Limitee,ADW-A.TO,Consumer Products & Services
+Akita Drilling Ltd.,AKT-A.TO, Industrial Products & Services 
+Alimentation Couche-Tard Inc.,ATD-A.TO,Consumer Products & Services
+CCL Industries Inc.,CCL-B.TO,Industrial Products & Services
+CU Inc.,CIU-PA.TO,Utilities & Pipelines
+Corus Entertainment Inc.,CJR-B.TO,Comm & Media
+Corby Spirit and Wine Limited,CSW-A.TO,Consumer Products & Services
+DHX Media Ltd.,DHX-A.TO,Comm & Media
+Dorel Industries Inc.,DII-B.TO,Consumer Products & Services
+HSBC Bank Canada,HSB-PC.TO,Financial Services
+Logistec Corporation,LGT-B.TO,Industrial Products & Services
+Newfoundland Capital Corporation Limited,NCC-A.TO,Comm & Media
+Quebecor Inc.,QBR-B.TO,Comm & Media
+Stingray Digital Group Inc.,RAY-A.TO,Comm & Media
+Rogers Communications Inc.,RCI-B.TO,Comm & Media
+Shaw Communications Inc.,SJR-B.TO,Comm & Media
+Transcontinental Inc.,TCL-A.TO,Comm & Media
+Molson Coors Canada Inc.,TPX-B.TO,Consumer Products & Services
+Brookfield Asset Management Inc.,BAM-A.TO,Financial Services
+Brookfield Office Properties Inc.,BPO-PN.TO, Real Estate 
+Artis Real Estate Investment Trust,AX-UN.TO, Real Estate 
+Bombardier Inc.,BBD-B.TO,Industrial Products & Services
+Riocan Real Estate Investment Trust,REI-UN.TO, Real Estate 
+Slate Office REIT,SOT-UN.TO, Real Estate 
+Slate Retail REIT,SRT-UN.TO, Real Estate 
+Royal Bank of Canada,RY.TO,Financial Services
+BCE Inc.,BCE.TO,Comm & Media
+Enbridge Inc.,ENB.TO,Utilities & Pipelines
+Bank of Nova Scotia (The),BNS.TO,Financial Services
+Power Financial Corporation,PWF.TO,Financial Services
+Manulife Financial Corporation,MFC.TO,Financial Services
+Great-West Lifeco Inc.,GWO.TO,Financial Services
+Toronto-Dominion Bank (The),TD.TO,Financial Services
+Bank of Montreal,BMO.TO,Financial Services
+Fairfax Financial Holdings Limited,FFH.TO,Financial Services
+Sun Life Financial Inc.,SLF.TO,Financial Services
+TransCanada Corporation,TRP.TO,Utilities & Pipelines
+Canadian Utilities Limited,CU.TO,Utilities & Pipelines
+Fortis Inc.,FTS.TO,Utilities & Pipelines
+Power Corporation Of Canada,POW.TO,Financial Services
+AltaGas Ltd.,ALA.TO, Industrial Products & Services 
+Pembina Pipeline Corporation,PPL.TO,Utilities & Pipelines
+Emera Incorporated,EMA.TO,Utilities & Pipelines
+Canadian Imperial Bank Of Commerce,CM.TO,Financial Services
+Element Fleet Management Corp.,EFN.TO,Industrial Products & Services
+Husky Energy Inc.,HSE.TO, Oil & Gas 
+National Bank of Canada,NA.TO,Financial Services
+TransAlta Corporation,TA.TO,Utilities & Pipelines
+George Weston Limited,WN.TO,Consumer Products & Services
+Aimia Inc.,AIM.TO,Consumer Products & Services
+Capital Power Corporation,CPX.TO,Utilities & Pipelines
+E-L Financial Corporation Limited,ELF.TO,Financial Services
+Laurentian Bank Of Canada,LB.TO,Financial Services
+Northland Power Inc.,NPI.TO,Clean Technology
+Westcoast Energy Inc.,W.TO,Utilities & Pipelines
+Algonquin Power & Utilities Corp.,AQN.TO,Clean Technology
+Birchcliff Energy Ltd.,BIR.TO, Oil & Gas 
+Canaccord Genuity Group Inc.,CF.TO,Financial Services
+Canadian General Investments Limited,CGI.TO,Financial Services
+Industrial Alliance Insurance and Financial Services Inc.,IAG.TO,Financial Services
+Intact Financial Corporation,IFC.TO,Financial Services
+Innergex Renewable Energy Inc.,INE.TO,Clean Technology
+Loblaw Companies Limited,L.TO,Consumer Products & Services
+Acasta Enterprises Inc.,AEF.TO,Financial Services
+Chorus Aviation Inc.,CHR.TO,Industrial Products & Services
+Cardinal Energy Ltd.,CJ.TO, Oil & Gas 
+Cargojet Inc.,CJT.TO,Industrial Products & Services
+Capstone Infrastructure Corporation,CSE.TO,Clean Technology
+Canadian Tire Corporation Limited,CTC.TO,Consumer Products & Services
+Canadian Western Bank,CWB.TO,Financial Services
+DREAM Unlimited Corp.,DRM.TO, Real Estate 
+Equitable Group Inc.,EQB.TO,Financial Services
+First National Financial Corporation,FN.TO,Financial Services
+Guardian Capital Group Limited,GCG.TO,Financial Services
+GVIC Communications Corp.,GCT.TO,Comm & Media
+GMP Capital Inc.,GMP.TO,Financial Services
+HNZ Group Inc.,HNZ.TO,Industrial Products & Services
+IGM Financial Inc.,IGM.TO,Financial Services
+Madison Pacific Properties Inc.,MPC.TO, Real Estate 
+Nautilus Minerals Inc.,NUS.TO, Mining 
+Peregrine Diamonds Ltd.,PGD.TO, Mining 
+Pinetree Capital Ltd.,PNP.TO,Financial Services
+Reitmans (Canada) Limited,RET.TO,Consumer Products & Services
+TriMetals Mining Inc.,TMI.TO, Mining 
+Temple Hotels Inc.,TPH.TO, Real Estate 
+Thomson Reuters Corporation,TRI.TO,Comm & Media
+Urbana Corporation,URB.TO,Financial Services
+Valener Inc.,VNR.TO,Utilities & Pipelines
+Whitecap Resources Inc.,WCP.TO, Oil & Gas 
+Yorbeau Resources Inc.,YRB.TO, Mining 
+Aberdeen International Inc.,AAB.TO,Financial Services
+Pure Industrial Real Estate Trust,AAR-UN.TO, Real Estate 
+Advantage Oil & Gas Ltd.,AAV.TO, Oil & Gas 
+Absolute Software Corporation,ABT.TO, Technology 
+Barrick Gold Corporation,ABX.TO, Mining 
+Air Canada,AC.TO,Industrial Products & Services
+Aurora Cannabis Inc.,ACB.TO,Medical Marijuana
+Accord Financial Corp.,ACD.TO,Financial Services
+AutoCanada Inc.,ACQ.TO,Consumer Products & Services
+Agellan Commercial Real Estate Investment Trust,ACR-UN.TO, Real Estate 
+Alaris Royalty Corp.,AD.TO,Financial Services
+Acadian Timber Corp.,ADN.TO,Industrial Products & Services
+Agnico Eagle Mines Limited,AEM.TO, Mining 
+AEterna Zentaris Inc.,AEZS.TO,Biotechnology
+AlarmForce Industries Inc.,AF.TO,Consumer Products & Services
+AG Growth International Inc.,AFN.TO,Industrial Products & Services
+AGF Management Limited,AGF-B.TO,Financial Services
+Alamos Gold Inc.,AGI.TO, Mining 
+AGT Food and Ingredients Inc.,AGT.TO,Consumer Products & Services
+Agrium Inc.,AGU.TO, Mining 
+Atrium Mortgage Investment Corporation,AI.TO,Financial Services
+Altus Group Limited,AIF.TO,Industrial Products & Services
+AgJunction Inc.,AJX.TO, Technology 
+Asanko Gold Inc.,AKG.TO, Mining 
+Algoma Central Corporation,ALC.TO,Industrial Products & Services
+Alio Gold Inc.,ALO.TO, Mining 
+Altius Minerals Corporation,ALS.TO, Mining 
+AuRico Metals Inc.,AMI.TO, Mining 
+Almaden Minerals Ltd.,AMM.TO, Mining 
+Anaconda Mining Inc.,ANX.TO, Mining 
+Africa Oil Corp.,AOI.TO, Oil & Gas 
+Aphria Inc.,APH.TO,Medical Marijuana
+Automotive Properties Real Estate Investment Trust,APR-UN.TO, Real Estate 
+Aptose Biosciences Inc.,APS.TO,Biotechnology
+Allied Properties Real Estate Investment Trust,AP-UN.TO, Real Estate 
+Anglo Pacific Group PLC,APY.TO, Mining 
+Aquila Resources Inc.,AQA.TO, Mining 
+Argonaut Gold Inc.,AR.TO, Mining 
+Aecon Group Inc.,ARE.TO,Industrial Products & Services
+Amerigo Resources Ltd.,ARG.TO, Mining 
+ARC Resources Ltd.,ARX.TO, Oil & Gas 
+Aralez Pharmaceuticals Inc.,ARZ.TO,Pharmaceuticals
+Ascendant Resources Inc.,ASND.TO, Mining 
+Avesoro Resources Inc.,ASO.TO, Mining 
+Acerus Pharmaceuticals Corporation,ASP.TO,Pharmaceuticals
+Alacer Gold Corp.,ASR.TO, Mining 
+ATS Automation Tooling Systems Inc.,ATA.TO,Industrial Products & Services
+Athabasca Oil Corporation,ATH.TO, Oil & Gas 
+Atlatsa Resources Corporation,ATL.TO, Mining 
+Atlantic Power Corporation,ATP.TO,Clean Technology
+Aritzia Inc.,ATZ.TO,Consumer Products & Services
+Auryn Resources Inc.,AUG.TO, Mining 
+Golden Minerals Company,AUMN.TO, Mining 
+Aurinia Pharmaceuticals Inc.,AUP.TO,Biotechnology
+Avalon Advanced Materials Inc.,AVL.TO, Mining 
+Avigilon Corporation,AVO.TO, Technology 
+Avcorp Industries Inc.,AVP.TO,Industrial Products & Services
+A&W Revenue Royalties Income Fund,AW-UN.TO,Consumer Products & Services
+Alexco Resource Corp.,AXR.TO, Mining 
+Alterra Power Corp.,AXY.TO,Clean Technology
+Atalaya Mining plc,AYM.TO, Mining 
+Arizona Mining Inc.,AZ.TO, Mining 
+Azarga Uranium Corp.,AZZ.TO, Mining 
+Banro Corporation,BAA.TO, Mining 
+Badger Daylighting Ltd.,BAD.TO, Industrial Products & Services 
+Balmoral Resources Ltd.,BAR.TO, Mining 
+BlackBerry Limited,BB.TO, Technology 
+Brampton Brick Limited,BBL-A.TO,Industrial Products & Services
+Cott Corporation,BCB.TO,Consumer Products & Services
+New Look Vision Group Inc.,BCI.TO,Consumer Products & Services
+Black Diamond Group Limited,BDI.TO,Industrial Products & Services
+Bird Construction Inc.,BDT.TO,Industrial Products & Services
+Boardwalk Real Estate Investment Trust,BEI-UN.TO, Real Estate 
+Becker Milk Company Ltd. (The),BEK-B.TO, Real Estate 
+BioAmber Inc.,BIOA.TO,Clean Technology
+Black Iron Inc.,BKI.TO, Mining 
+BNK Petroleum Inc.,BKX.TO, Oil & Gas 
+Ballard Power Systems Inc.,BLDP.TO,Clean Technology
+BELLUS Health Inc.,BLU.TO,Biotechnology
+Boralex Inc.,BLX.TO,Clean Technology
+Bonterra Energy Corp.,BNE.TO, Oil & Gas 
+Bengal Energy Ltd.,BNG.TO, Oil & Gas 
+Bonavista Energy Corporation,BNP.TO, Oil & Gas 
+AirBoss of America Corp.,BOS.TO,Consumer Products & Services
+Boyuan Construction Group Inc.,BOY.TO,Industrial Products & Services
+Boston Pizza Royalties Income Fund,BPF-UN.TO,Consumer Products & Services
+Brookfield Property Partners L.P.,BPY-UN.TO, Real Estate 
+Big Rock Brewery Inc.,BR.TO,Consumer Products & Services
+Brick Brewing Co. Limited,BRB.TO,Consumer Products & Services
+Brookfield Real Estate Services Inc.,BRE.TO, Real Estate 
+Brio Gold Inc.,BRIO.TO, Mining 
+Bri-Chem Corp.,BRY.TO, Industrial Products & Services 
+Belo Sun Mining Corp.,BSX.TO, Mining 
+BTB Real Estate Investment Trust,BTB-UN.TO, Real Estate 
+Baytex Energy Corp.,BTE.TO, Oil & Gas 
+B2Gold Corp.,BTO.TO, Mining 
+Burcon NutraScience Corporation,BU.TO,Clean Technology
+Buhler Industries Inc.,BUI.TO,Industrial Products & Services
+Bellatrix Exploration Ltd.,BXE.TO, Oil & Gas 
+Boyd Group Income Fund,BYD-UN.TO,Industrial Products & Services
+Baylin Technologies Inc.,BYL.TO, Technology 
+CAE Inc.,CAE.TO, Technology 
+Caledonia Mining Corporation Plc,CAL.TO, Mining 
+Cara Operations Limited,CARA.TO,Consumer Products & Services
+Canadian Apartment Properties Real Estate Investment Trust,CAR-UN.TO, Real Estate 
+Cascades Inc.,CAS.TO,Clean Technology
+Callidus Capital Corporation,CBL.TO,Financial Services
+Cogeco Communications Inc.,CCA.TO,Comm & Media
+Canarc Resource Corp.,CCM.TO, Mining 
+Cameco Corporation,CCO.TO, Mining 
+Co-operators General Insurance Company,CCS-PC.TO,Financial Services
+Critical Control Energy Services Corp.,CCZ.TO, Technology 
+Corridor Resources Inc.,CDH.TO, Oil & Gas 
+Cardinal Resources Limited,CDV.TO, Mining 
+Centamin plc,CEE.TO, Mining 
+Cervus Equipment Corporation,CERV.TO,Industrial Products & Services
+Cathedral Energy Services Ltd.,CET.TO, Industrial Products & Services 
+CES Energy Solutions Corp.,CEU.TO, Industrial Products & Services 
+Conifex Timber Inc.,CFF.TO,Industrial Products & Services
+Canfor Corporation,CFP.TO,Industrial Products & Services
+Calfrac Well Services Ltd.,CFW.TO, Industrial Products & Services 
+Canfor Pulp Products Inc.,CFX.TO,Industrial Products & Services
+Centerra Gold Inc.,CG.TO, Mining 
+China Gold International Resources Corp. Ltd.,CGG.TO, Mining 
+Cogeco Inc.,CGO.TO,Comm & Media
+Columbus Gold Corp.,CGT.TO, Mining 
+Cineplex Inc.,CGX.TO,Comm & Media
+Calian Group Ltd.,CGY.TO, Technology 
+Chemtrade Logistics Income Fund,CHE-UN.TO,Industrial Products & Services
+Centric Health Corporation,CHH.TO,Healthcare Facilities and Equipment
+Choice Properties Real Estate Investment Trust,CHP-UN.TO, Real Estate 
+Chesswood Group Limited,CHW.TO,Financial Services
+Champion Iron Limited,CIA.TO, Mining 
+Colliers International Group Inc.,CIGI.TO, Real Estate 
+CI Financial Corp.,CIX.TO,Financial Services
+Chinook Energy Inc.,CKE.TO, Oil & Gas 
+Clarke Inc.,CKI.TO,Industrial Products & Services
+Clearwater Seafoods Incorporated,CLR.TO,Clean Technology
+Celestica Inc.,CLS.TO, Technology 
+CanniMed Therapeutics Inc.,CMED.TO,Medical Marijuana
+Computer Modelling Group Ltd.,CMG.TO, Technology 
+Carmanah Technologies Corporation,CMH.TO,Clean Technology
+Copper Mountain Mining Corporation,CMMC.TO, Mining 
+Canacol Energy Ltd.,CNE.TO, Oil & Gas 
+Continental Gold Inc.,CNL.TO, Mining 
+Canadian Natural Resources Limited,CNQ.TO, Oil & Gas 
+Canadian National Railway Company,CNR.TO,Industrial Products & Services
+Century Global Commodities Corporation,CNT.TO, Mining 
+CNOOC Limited,CNU.TO, Oil & Gas 
+Cardiome Pharma Corp.,COM.TO,Pharmaceuticals
+Cona Resources Ltd.,CONA.TO, Oil & Gas 
+Coro Mining Corp.,COP.TO, Mining 
+Canadian Pacific Railway Limited,CP.TO,Industrial Products & Services
+Crescent Point Energy Corp.,CPG.TO, Oil & Gas 
+Cipher Pharmaceuticals Inc.,CPH.TO,Pharmaceuticals
+Condor Petroleum Inc.,CPI.TO, Oil & Gas 
+Cequence Energy Ltd.,CQE.TO, Oil & Gas 
+Crew Energy Inc.,CR.TO, Oil & Gas 
+CRH Medical Corporation,CRH.TO,Healthcare Services and Supplies
+Crombie Real Estate Investment Trust,CRR-UN.TO, Real Estate 
+CT Real Estate Investment Trust,CRT-UN.TO, Real Estate 
+Crown Capital Partners Inc.,CRWN.TO,Financial Services
+Capstone Mining Corp.,CS.TO, Mining 
+Chartwell Retirement Residences,CSH-UN.TO, Real Estate 
+ClearStream Energy Services Inc.,CSM.TO, Industrial Products & Services 
+Constellation Software Inc.,CSU.TO, Technology 
+Crescita Therapeutics Inc.,CTX.TO,Pharmaceuticals
+Cominar Real Estate Investment Trust,CUF-UN.TO, Real Estate 
+"Caribbean Utilities Company, Ltd.",CUP-U.TO,Utilities & Pipelines
+Cenovus Energy Inc.,CVE.TO, Oil & Gas 
+Clairvest Group Inc.,CVG.TO,Financial Services
+Canadian World Fund Limited,CWF.TO,Financial Services
+Crosswinds Holdings Inc.,CWI.TO,Financial Services
+Caldwell Partners International Inc. (The),CWL.TO,Industrial Products & Services
+CanWel Building Materials Group Ltd.,CWX.TO,Industrial Products & Services
+Currency Exchange International Corp.,CXI.TO,Financial Services
+Chalice Gold Mines Limited,CXN.TO, Mining 
+Concordia International Corp.,CXR.TO,Pharmaceuticals
+Cymbria Corporation,CYB.TO,Financial Services
+Canadian Zinc Corporation,CZN.TO, Mining 
+Discovery Air Inc.,DA-A.TO,Industrial Products & Services
+D-Box Technologies Inc.,DBO.TO, Technology 
+Difference Capital Financial Inc.,DCF.TO,Financial Services
+Data Communications Management Corp.,DCM.TO,Industrial Products & Services
+Dominion Diamond Corporation,DDC.TO, Mining 
+Delphi Energy Corp.,DEE.TO, Oil & Gas 
+Detour Gold Corporation,DGC.TO, Mining 
+Dream Industrial Real Estate Investment Trust,DIR-UN.TO, Real Estate 
+Diversified Royalty Corp.,DIV.TO,Industrial Products & Services
+Denison Mines Corp.,DML.TO, Mining 
+Dalradian Resources Inc.,DNA.TO, Mining 
+Dynacor Gold Mines Inc.,DNG.TO, Mining 
+Candente Copper Corp.,DNT.TO, Mining 
+Dollarama Inc.,DOL.TO,Consumer Products & Services
+BRP Inc.,DOO.TO,Consumer Products & Services
+Dundee Precious Metals Inc.,DPM.TO, Mining 
+Medical Facilities Corporation,DR.TO, Real Estate 
+Dream Hard Asset Alternatives Trust,DRA-UN.TO, Real Estate 
+Dream Global Real Estate Investment Trust,DRG-UN.TO, Real Estate 
+DIRTT Environmental Solutions Ltd.,DRT.TO,Clean Technology
+ADF Group Inc.,DRX.TO,Industrial Products & Services
+Descartes Systems Group Inc. (The),DSG.TO, Technology 
+Dream Office Real Estate Investment Trust,D-UN.TO, Real Estate 
+DataWind Inc.,DW.TO, Technology 
+DXI Energy Inc.,DXI.TO, Oil & Gas 
+"Enterprise Group, Inc.",E.TO, Industrial Products & Services 
+Encana Corporation,ECA.TO, Oil & Gas 
+EnerCare Inc.,ECI.TO,Consumer Products & Services
+ECN Capital Corp.,ECN.TO,Financial Services
+EcoSynthetix Inc.,ECO.TO,Clean Technology
+eCobalt Solutions Inc.,ECS.TO, Mining 
+Endeavour Silver Corp.,EDR.TO, Mining 
+Spectral Medical Inc.,EDT.TO,Healthcare Facilities and Equipment
+Endeavour Mining Corporation,EDV.TO, Mining 
+Echelon Financial Holdings Inc.,EFH.TO,Financial Services
+Electrovaya Inc.,EFL.TO,Clean Technology
+Energy Fuels Inc.,EFR.TO, Mining 
+Enerflex Ltd.,EFX.TO, Industrial Products & Services 
+Eagle Energy Inc.,EGL.TO, Oil & Gas 
+Exchange Income Corporation,EIF.TO,Financial Services
+Eldorado Gold Corporation,ELD.TO, Mining 
+Eastern Platinum Limited,ELR.TO, Mining 
+The Empire Life Insurance Company,EML-PA.TO,Financial Services
+Empire Company Limited,EMP-A.TO,Consumer Products & Services
+Enbridge Income Fund Holdings Inc.,ENF.TO,Utilities & Pipelines
+Enghouse Systems Limited,ENGH.TO, Technology 
+ENTREC Corporation,ENT.TO,Industrial Products & Services
+Euromax Resources Ltd.,EOX.TO, Mining 
+Essa Pharma Inc.,EPI.TO,Pharmaceuticals
+Epsilon Energy Ltd.,EPS.TO, Oil & Gas 
+Equity Financial Holdings Inc.,EQI.TO,Financial Services
+Eastmain Resources Inc.,ER.TO, Mining 
+Erdene Resource Development Corporation,ERD.TO, Mining 
+Enerplus Corporation,ERF.TO, Oil & Gas 
+Eclipse Residential Mortgage Investment Corporation,ERM.TO,Financial Services
+Ero Copper Corp.,ERO.TO, Mining 
+Ensign Energy Services Inc.,ESI.TO, Industrial Products & Services 
+Euro Sun Mining Inc.,ESM.TO, Mining 
+Essential Energy Services Ltd.,ESN.TO, Industrial Products & Services 
+Espial Group Inc.,ESP.TO, Technology 
+Evertz Technologies Limited,ET.TO, Technology 
+Entree Resources Ltd.,ETG.TO, Mining 
+Etrion Corporation,ETX.TO,Clean Technology
+Extendicare Inc.,EXE.TO, Real Estate 
+EXFO Inc.,EXF.TO, Technology 
+Excellon Resources Inc.,EXN.TO, Mining 
+Aberdeen Asia-Pacific Income Investment Company Ltd.,FAP.TO,Financial Services
+Foraco International SA,FAR.TO, Industrial Products & Services 
+Firm Capital Mortgage Investment Corporation,FC.TO,Financial Services
+First Capital Realty Inc.,FCR.TO, Real Estate 
+Fission Uranium Corp.,FCU.TO, Mining 
+Frontera Energy Corporation,FEC.TO, Oil & Gas 
+First Mining Finance Corp.,FF.TO, Mining 
+Fairfax India Holdings Corporation,FIH-U.TO,Financial Services
+First Quantum Minerals Ltd.,FM.TO, Mining 
+Franco-Nevada Corporation,FNV.TO, Mining 
+Goodfood Market Corp.,FOOD.TO,Consumer Products & Services
+First Majestic Silver Corp.,FR.TO, Mining 
+Freshii Inc.,FRII.TO,Consumer Products & Services
+Freehold Royalties Ltd.,FRU.TO, Oil & Gas 
+Fennec Pharmaceuticals Inc.,FRX.TO,Biotechnology
+FirstService Corporation,FSV.TO, Real Estate 
+Forsys Metals Corp.,FSY.TO, Mining 
+Fiera Capital Corporation,FSZ.TO,Financial Services
+Fortune Minerals Limited,FT.TO, Mining 
+Firan Technology Group Corporation,FTG.TO, Technology 
+Fortress Paper Ltd.,FTP.TO,Industrial Products & Services
+Finning International Inc.,FTT.TO,Industrial Products & Services
+Fortuna Silver Mines Inc.,FVI.TO, Mining 
+Freegold Ventures Limited,FVL.TO, Mining 
+Goldcorp Inc.,G.TO, Mining 
+BMTC Group Inc.,GBT.TO,Consumer Products & Services
+Gabriel Resources Ltd.,GBU.TO, Mining 
+Great Canadian Gaming Corporation,GC.TO,Consumer Products & Services
+Colabor Group Inc.,GCL.TO,Consumer Products & Services
+Gran Colombia Gold Corp.,GCM.TO, Mining 
+Genesis Land Development Corp.,GDC.TO, Real Estate 
+GDI Integrated Facility Services Inc.,GDI.TO,Industrial Products & Services
+Goodfellow Inc.,GDL.TO,Industrial Products & Services
+Gendis Inc.,GDS.TO,Industrial Products & Services
+Gibson Energy Inc.,GEI.TO, Industrial Products & Services 
+GeneNews Limited,GEN.TO,Biotechnology
+Geodrill Limited,GEO.TO, Industrial Products & Services 
+Goldgroup Mining Inc.,GGA.TO, Mining 
+GoGold Resources Inc.,GGD.TO, Mining 
+Gamehost Inc.,GH.TO,Consumer Products & Services
+CGI Group Inc.,GIB-A.TO, Technology 
+Gildan Activewear Inc.,GIL.TO,Consumer Products & Services
+GLG Life Tech Corporation,GLG.TO,Pharmaceuticals
+General Motors Company,GMM-U.TO,Consumer Products & Services
+General Moly Inc.,GMO.TO, Mining 
+Globex Mining Enterprises Inc.,GMX.TO, Mining 
+Canada Goose Holdings Inc.,GOOS.TO,Consumer Products & Services
+Great Panther Silver Limited,GPR.TO, Mining 
+BSM Technologies Inc.,GPS.TO, Technology 
+Golden Queen Mining Co. Ltd.,GQM.TO, Mining 
+Granite Real Estate Investment Trust,GRT-UN.TO, Real Estate 
+Gluskin Sheff + Associates Inc.,GS.TO,Financial Services
+Golden Star Resources Ltd.,GSC.TO, Mining 
+Gold Standard Ventures Corp.,GSV.TO, Mining 
+goeasy Ltd.,GSY.TO,Financial Services
+Gran Tierra Energy Inc.,GTE.TO, Oil & Gas 
+Gran Tierra Exchangeco Inc.,GTX.TO, Oil & Gas 
+Knight Therapeutics Inc.,GUD.TO,Biotechnology
+Guyana Goldfields Inc.,GUY.TO, Mining 
+Glacier Media Inc.,GVC.TO,Comm & Media
+"Global Water Resources, Inc.",GWR.TO,Utilities & Pipelines
+Gear Energy Ltd.,GXE.TO, Oil & Gas 
+Granite Oil Corp.,GXO.TO, Oil & Gas 
+Gazit-Globe Ltd.,GZT.TO, Real Estate 
+Hydro One Limited,H.TO,Utilities & Pipelines
+Hudson's Bay Company,HBC.TO,Consumer Products & Services
+HudBay Minerals Inc.,HBM.TO, Mining 
+Helix BioPharma Corp.,HBP.TO,Biotechnology
+Home Capital Group Inc.,HCG.TO,Financial Services
+Hanwei Energy Services Corp.,HE.TO, Industrial Products & Services 
+Heron Resources Limited,HER.TO, Mining 
+Holloway Lodging Corporation,HLC.TO, Real Estate 
+High Liner Foods Incorporated,HLF.TO,Consumer Products & Services
+Hammond Manufacturing Company Limited,HMM-A.TO,Industrial Products & Services
+Horizon North Logistics Inc.,HNL.TO, Industrial Products & Services 
+American Hotel Income Properties REIT LP,HOT-UN.TO, Real Estate 
+Hammond Power Solutions Inc.,HPS-A.TO,Industrial Products & Services
+Harte Gold Corp.,HRT.TO, Mining 
+H&R Real Estate Investment Trust,HR-UN.TO, Real Estate 
+Heroux-Devtek Inc.,HRX.TO,Industrial Products & Services
+"Helius Medical Technologies, Inc.",HSM.TO,Health Care Technology
+Hardwoods Distribution Inc.,HWD.TO,Industrial Products & Services
+High Arctic Energy Services Inc.,HWO.TO, Industrial Products & Services 
+Hyduke Energy Services Inc.,HYD.TO, Industrial Products & Services 
+Hydrogenics Corporation,HYG.TO,Clean Technology
+Horizonte Minerals Plc,HZM.TO, Mining 
+Integrated Asset Management Corp.,IAM.TO,Financial Services
+IBI Group Inc.,IBG.TO,Industrial Products & Services
+Canlan Ice Sports Corp.,ICE.TO, Real Estate 
+IC Potash Corp.,ICP.TO, Mining 
+Indigo Books & Music Inc.,IDG.TO,Consumer Products & Services
+iFabric Corp.,IFA.TO,Consumer Products & Services
+Interfor Corporation,IFP.TO,Industrial Products & Services
+Imperial Metals Corporation,III.TO, Mining 
+InterRent Real Estate Investment Trust,IIP-UN.TO, Real Estate 
+IAMGold Corporation,IMG.TO, Mining 
+Imperial Oil Limited,IMO.TO, Oil & Gas 
+Intermap Technologies Corporation,IMP.TO, Technology 
+Immunovaccine Inc.,IMV.TO,Pharmaceuticals
+Inovalis Real Estate Investment Trust,INO-UN.TO, Real Estate 
+INSCAPE Corporation,INQ.TO,Industrial Products & Services
+INV Metals Inc.,INV.TO, Mining 
+IntelliPharmaCeutics International Inc.,IPCI.TO,Pharmaceuticals
+International Petroleum Corporation,IPCO.TO, Oil & Gas 
+Inter Pipeline Ltd.,IPL.TO,Utilities & Pipelines
+InPlay Oil Corp.,IPO.TO, Oil & Gas 
+Imvescor Restaurant Group Inc.,IRG.TO,Consumer Products & Services
+Alderon Iron Ore Corp.,IRON.TO, Mining 
+Information Services Corporation,ISV.TO, Technology 
+Intrinsyc Technologies Corporation,ITC.TO, Technology 
+International Tower Hill Mines Ltd.,ITH.TO, Mining 
+Intertape Polymer Group Inc.,ITP.TO,Industrial Products & Services
+The Intertain Group Limited,ITX.TO, Technology 
+Ivanhoe Mines Ltd.,IVN.TO, Mining 
+Jaguar Mining Inc.,JAG.TO, Mining 
+Just Energy Group Inc.,JE.TO,Utilities & Pipelines
+Journey Energy Inc.,JOY.TO, Oil & Gas 
+Jamieson Wellness Inc.,JWEL.TO,Consumer Products & Services
+Kinross Gold Corporation,K.TO, Mining 
+Katanga Mining Limited,KAT.TO, Mining 
+K-Bro Linen Inc.,KBL.TO,Industrial Products & Services
+Klondex Mines Ltd.,KDX.TO, Mining 
+Keg Royalties Income Fund (The),KEG-UN.TO,Consumer Products & Services
+Kelt Exploration Ltd.,KEL.TO, Oil & Gas 
+Kerr Mines Inc.,KER.TO, Mining 
+Kew Media Group Inc.,KEW.TO,Comm & Media
+Keyera Corp.,KEY.TO,Utilities & Pipelines
+Kingsway Financial Services Inc.,KFS.TO,Financial Services
+Kirkland Lake Gold Ltd.,KL.TO, Mining 
+Kirkland Lake Gold Inc.,KLG.TO, Mining 
+Kelso Technologies Inc.,KLS.TO,Industrial Products & Services
+Kinder Morgan Canada Limited,KML.TO,Utilities & Pipelines
+Killam Apartment Real Estate Investment Trust,KMP-UN.TO, Real Estate 
+Corvus Gold Inc.,KOR.TO, Mining 
+KP Tissue Inc.,KPT.TO,Clean Technology
+Karnalyte Resources Inc.,KRN.TO, Mining 
+Crius Energy Trust,KWH-UN.TO,Utilities & Pipelines
+Kinaxis Inc.,KXS.TO, Technology 
+Lithium Americas Corp.,LAC.TO, Mining 
+Laramide Resources Ltd.,LAM.TO, Mining 
+Lassonde Industries Inc.,LAS-A.TO,Consumer Products & Services
+MedReleaf Corp.,LEAF.TO,Medical Marijuana
+LeadFX Inc.,LFX.TO, Mining 
+Liberty Gold Corp.,LGD.TO, Mining 
+Largo Resources Ltd.,LGO.TO, Mining 
+LOGiQ Asset Management Inc.,LGQ.TO,Financial Services
+Labrador Iron Ore Royalty Corporation,LIF.TO,Financial Services
+Liquor Stores N.A. Ltd.,LIQ.TO,Consumer Products & Services
+Leagold Mining Corporation,LMC.TO, Mining 
+Loncor Resources Inc.,LN.TO, Mining 
+Leon's Furniture Limited,LNF.TO,Consumer Products & Services
+Linamar Corporation,LNR.TO,Industrial Products & Services
+Lanesborough Real Estate Investment Trust,LRT-UN.TO, Real Estate 
+Lucara Diamond Corp.,LUC.TO, Mining 
+Lundin Gold Inc.,LUG.TO, Mining 
+Lundin Mining Corporation,LUN.TO, Mining 
+Levon Resources Ltd.,LVN.TO, Mining 
+"LXRandCo, Inc.",LXR.TO,Consumer Products & Services
+Lydian International Limited,LYD.TO, Mining 
+MAG Silver Corp.,MAG.TO, Mining 
+Magellan Aerospace Corporation,MAL.TO,Industrial Products & Services
+Marret Resource Corp.,MAR.TO,Financial Services
+Mawson Resources Limited,MAW.TO, Mining 
+Midas Gold Corp.,MAX.TO, Mining 
+Maxar Technologies Ltd.,MAXR.TO, Technology 
+CIBT Education Group Inc.,MBA.TO,Consumer Products & Services
+Microbix Biosystems Inc.,MBX.TO,Biotechnology
+McCoy Global Inc.,MCB.TO, Industrial Products & Services 
+Mediagrif Interactive Technologies Inc.,MDF.TO, Technology 
+Major Drilling Group International Inc.,MDI.TO, Industrial Products & Services 
+Medicenna Therapeutics Corp.,MDNA.TO,Biotechnology
+Moneta Porcupine Mines Inc.,ME.TO, Mining 
+MEG Energy Corp.,MEG.TO, Oil & Gas 
+Mainstreet Equity Corp.,MEQ.TO, Real Estate 
+Maple Leaf Foods Inc.,MFI.TO,Consumer Products & Services
+Magna International Inc.,MG.TO,Industrial Products & Services
+Mega Uranium Ltd.,MGA.TO, Mining 
+Genworth MI Canada Inc.,MIC.TO,Financial Services
+Excelsior Mining Corp.,MIN.TO, Mining 
+MCAN Mortgage Corporation,MKP.TO,Financial Services
+Mandalay Resources Corporation,MND.TO, Mining 
+Mason Resources Corp,MNR.TO, Mining 
+Mitel Networks Corporation,MNW.TO, Technology 
+Mogo Finance Technology Inc.,MOGO.TO, Technology 
+Marathon Gold Corporation,MOZ.TO, Mining 
+Mountain Province Diamonds Inc.,MPVD.TO, Mining 
+Morguard Corporation,MRC.TO, Real Estate 
+Melcor Developments Ltd.,MRD.TO, Real Estate 
+Martinrea International Inc.,MRE.TO,Industrial Products & Services
+Morguard North American Residential Real Estate Investment Trust,MRG-UN.TO, Real Estate 
+Morguard Real Estate Investment Trust,MRT-UN.TO, Real Estate 
+Metro Inc.,MRU.TO,Consumer Products & Services
+Melcor Real Estate Investment Trust,MR-UN.TO, Real Estate 
+Morneau Shepell Inc.,MSI.TO,Industrial Products & Services
+Minco Silver Corporation,MSV.TO, Mining 
+Mullen Group Ltd.,MTL.TO, Industrial Products & Services 
+MTY Food Group Inc.,MTY.TO,Consumer Products & Services
+McEwen Mining Inc.,MUX.TO, Mining 
+Methanex Corporation,MX.TO,Industrial Products & Services
+Maxim Power Corp.,MXG.TO,Utilities & Pipelines
+Newalta Corporation,NAL.TO,Clean Technology
+NioCorp Developments Ltd.,NB.TO, Mining 
+NewCastle Gold Ltd.,NCA.TO, Mining 
+Northcliff Resources Ltd.,NCF.TO, Mining 
+Nevada Copper Corp.,NCU.TO, Mining 
+Northern Dynasty Minerals Ltd.,NDM.TO, Mining 
+Neptune Technologies & Bioressources Inc.,NEPT.TO,Pharmaceuticals
+Nexa Resources S.A.,NEXA.TO, Mining 
+NextSource Materials Inc.,NEXT.TO, Mining 
+New Flyer Industries Inc.,NFI.TO,Clean Technology
+Novagold Resources Inc.,NG.TO, Mining 
+New Gold Inc.,NGD.TO, Mining 
+NGEx Resources Inc.,NGQ.TO, Mining 
+Nighthawk Gold Corp.,NHK.TO, Mining 
+Noranda Income Fund,NIF-UN.TO, Mining 
+Niko Resources Ltd.,NKO.TO, Oil & Gas 
+NeuLion Inc.,NLN.TO,Comm & Media
+New Millennium Iron Corp.,NML.TO, Mining 
+Nemaska Lithium Inc.,NMX.TO, Mining 
+North American Energy Partners Inc.,NOA.TO, Industrial Products & Services 
+NAPEC Inc.,NPC.TO,Industrial Products & Services
+Verde Agritech Plc,NPK.TO, Mining 
+Northern Power Systems Corp.,NPS.TO,Clean Technology
+Nuvo Pharmaceuticals Inc.,NRI.TO,Pharmaceuticals
+Nevsun Resources Ltd.,NSU.TO, Mining 
+NuVista Energy Ltd.,NVA.TO, Oil & Gas 
+Neovasc Inc.,NVCN.TO,Healthcare Facilities and Equipment
+Northview Apartment Real Estate Investment Trust,NVU-UN.TO, Real Estate 
+North West Company Inc.,NWC.TO,Consumer Products & Services
+Northwest Healthcare Properties Real Estate Investment Trust,NWH-UN.TO, Real Estate 
+NexGen Energy Ltd.,NXE.TO, Mining 
+NexJ Systems Inc.,NXJ.TO, Technology 
+Obsidian Energy Ltd.,OBE.TO, Oil & Gas 
+OceanaGold Corporation,OGC.TO, Mining 
+Orbit Garant Drilling Inc.,OGD.TO, Industrial Products & Services 
+Olympia Financial Group Inc.,OLY.TO,Financial Services
+Orosur Mining Inc.,OMI.TO, Mining 
+Oncolytics Biotech Inc.,ONC.TO,Biotechnology
+ONEX Corporation,ONEX.TO,Financial Services
+Opsens Inc.,OPS.TO, Technology 
+Osisko Gold Royalties Ltd.,OR.TO, Mining 
+Aura Minerals Inc.,ORA.TO, Mining 
+Orocobre Limited,ORL.TO, Mining 
+Orvana Minerals Corp.,ORV.TO, Mining 
+Norbord Inc.,OSB.TO,Industrial Products & Services
+Osisko Mining Inc.,OSK.TO, Mining 
+Open Text Corporation,OTEX.TO, Technology 
+Oryx Petroleum Corporation Limited,OXC.TO, Oil & Gas 
+Primero Mining Corp.,P.TO, Mining 
+Pan American Silver Corp.,PAAS.TO, Mining 
+Partners Real Estate Investment Trust,PAR-UN.TO, Real Estate 
+CounterPath Corporation,PATH.TO, Technology 
+Posera Ltd.,PAY.TO, Technology 
+Premium Brands Holdings Corporation,PBH.TO,Consumer Products & Services
+Pollard Banknote Limited,PBL.TO,Consumer Products & Services
+Prophecy Development Corp.,PCY.TO, Mining 
+Precision Drilling Corporation,PD.TO, Industrial Products & Services 
+North American Palladium Ltd.,PDL.TO, Mining 
+Pattern Energy Group Inc.,PEGI.TO,Clean Technology
+Peyto Exploration & Development Corp.,PEY.TO, Oil & Gas 
+PFB Corporation,PFB.TO,Clean Technology
+Premier Gold Mines Limited,PG.TO, Mining 
+Pengrowth Energy Corporation,PGF.TO, Oil & Gas 
+Pershing Gold Corporation,PGLC.TO, Mining 
+PHX Energy Services Corp.,PHX.TO, Industrial Products & Services 
+Polaris Infrastructure Inc.,PIF.TO,Clean Technology
+Jean Coutu Group (PJC) Inc. (The),PJC-A.TO,Consumer Products & Services
+Parkland Fuel Corporation,PKI.TO,Industrial Products & Services
+Park Lawn Corporation,PLC.TO,Consumer Products & Services
+ProMetic Life Sciences Inc.,PLI.TO,Biotechnology
+Polaris Materials Corporation,PLS.TO, Mining 
+Plaza Retail REIT,PLZ-UN.TO, Real Estate 
+ProMIS Neurosciences Inc.,PMN.TO,Biotechnology
+Perpetual Energy Inc.,PMT.TO, Oil & Gas 
+CPI Card Group Inc.,PMTS.TO,Consumer Products & Services
+Pine Cliff Energy Ltd.,PNE.TO, Oil & Gas 
+Polymet Mining Corp.,POM.TO, Mining 
+Painted Pony Energy Ltd.,PONY.TO, Oil & Gas 
+Potash Corporation of Saskatchewan Inc.,POT.TO, Mining 
+Paramount Resources Ltd.,POU.TO, Oil & Gas 
+Prairie Provident Resources Inc.,PPR.TO, Oil & Gas 
+Potash Ridge Corporation,PRK.TO, Mining 
+Petrus Resources Ltd.,PRQ.TO, Oil & Gas 
+Perseus Mining Limited,PRU.TO, Mining 
+Pulse Seismic Inc.,PSD.TO, Industrial Products & Services 
+Pason Systems Inc.,PSI.TO, Industrial Products & Services 
+PrairieSky Royalty Ltd.,PSK.TO, Oil & Gas 
+"Pivot Technology Solutions, Inc.",PTG.TO, Technology 
+Platinum Group Metals Ltd.,PTM.TO, Mining 
+Points International Ltd.,PTS.TO, Technology 
+Pure Technologies Ltd.,PUR.TO,Clean Technology
+Pretium Resources Inc.,PVG.TO, Mining 
+Parex Resources Inc.,PXT.TO, Oil & Gas 
+BlackPearl Resources Inc.,PXX.TO, Oil & Gas 
+Pizza Pizza Royalty Corp.,PZA.TO,Consumer Products & Services
+Questerre Energy Corporation,QEC.TO, Oil & Gas 
+Restaurant Brands International Limited Partnership,QSP-UN.TO,Consumer Products & Services
+Restaurant Brands International Inc.,QSR.TO,Consumer Products & Services
+Quarterhill Inc.,QTRH.TO, Technology 
+Red Eagle Mining Corporation,R.TO, Mining 
+Ritchie Bros. Auctioneers Incorporated,RBA.TO,Industrial Products & Services
+Richelieu Hardware Ltd.,RCH.TO,Industrial Products & Services
+Redhawk Resources Inc.,RDK.TO, Mining 
+Redline Communications Group Inc.,RDL.TO, Technology 
+Real Matters Inc.,REAL.TO, Technology 
+Canadian Real Estate Investment Trust,REF-UN.TO, Real Estate 
+Resolute Forest Products Inc.,RFP.TO,Industrial Products & Services
+Argex Titanium Inc.,RGX.TO, Mining 
+Richmont Mines Inc.,RIC.TO, Mining 
+Redknee Solutions Inc.,RKN.TO, Technology 
+Rocky Mountain Dealerships Inc.,RME.TO,Industrial Products & Services
+RMP Energy Inc.,RMP.TO, Oil & Gas 
+Rubicon Minerals Corporation,RMX.TO, Mining 
+Rio Novo Gold Inc.,RN.TO, Mining 
+TransAlta Renewables Inc.,RNW.TO,Clean Technology
+Royal Nickel Corporation,RNX.TO, Mining 
+Roots Corporation,ROOT.TO,Consumer Products & Services
+Roxgold Inc.,ROXG.TO, Mining 
+Richards Packaging Income Fund,RPI-UN.TO,Industrial Products & Services
+Raging River Exploration Inc.,RRX.TO, Oil & Gas 
+Rogers Sugar Inc.,RSI.TO,Consumer Products & Services
+RTG Mining Inc.,RTG.TO, Mining 
+Russel Metals Inc.,RUS.TO,Industrial Products & Services
+Resverlogix Corp.,RVX.TO,Biotechnology
+Sherritt International Corporation,S.TO, Mining 
+Starcore International Mines Ltd.,SAM.TO, Mining 
+Saputo Inc.,SAP.TO,Consumer Products & Services
+St. Augustine Gold and Copper Limited,SAU.TO, Mining 
+Sabina Gold & Silver Corp.,SBB.TO, Mining 
+Serabi Gold plc,SBI.TO, Mining 
+Silver Bear Resources plc,SBR.TO, Mining 
+Street Capital Group Inc.,SCB.TO,Financial Services
+ShawCor Ltd.,SCL.TO, Industrial Products & Services 
+Second Cup Ltd. (The),SCU.TO,Consumer Products & Services
+Scandium International Mining Corp.,SCY.TO, Mining 
+Strad Energy Services Ltd.,SDY.TO, Industrial Products & Services 
+Seabridge Gold Inc.,SEA.TO, Mining 
+Senvest Capital Inc.,SEC.TO,Financial Services
+Serinus Energy Inc.,SEN.TO, Oil & Gas 
+Secure Energy Services Inc.,SES.TO, Industrial Products & Services 
+Spectra7 Microsystems Inc.,SEV.TO, Technology 
+NXT Energy Solutions Inc.,SFD.TO, Technology 
+Shore Gold Inc.,SGF.TO, Mining 
+SouthGobi Resources Ltd.,SGQ.TO, Mining 
+Surge Energy Inc.,SGY.TO, Oil & Gas 
+Source Energy Services Ltd.,SHLE.TO, Industrial Products & Services 
+Shopify Inc.,SHOP.TO, Technology 
+Sienna Senior Living Inc.,SIA.TO, Real Estate 
+Sprott Inc.,SII.TO,Financial Services
+Savaria Corporation,SIS.TO,Industrial Products & Services
+Stella-Jones Inc.,SJ.TO,Industrial Products & Services
+Solitario Zinc Corp.,SLR.TO, Mining 
+Sulliden Mining Capital Inc.,SMC.TO, Mining 
+Semafo Inc.,SMF.TO, Mining 
+Sierra Metals Inc.,SMT.TO, Mining 
+Summit Industrial Income REIT,SMU-UN.TO, Real Estate 
+SNC-Lavalin Group Inc.,SNC.TO,Industrial Products & Services
+SolGold plc,SOLG.TO, Mining 
+Stuart Olson Inc.,SOX.TO,Industrial Products & Services
+SunOpta Inc.,SOY.TO,Clean Technology
+Superior Plus Corp.,SPB.TO,Utilities & Pipelines
+Spartan Energy Corp.,SPE.TO, Oil & Gas 
+Strongco Corporation,SQP.TO,Industrial Products & Services
+Sprott Resource Holdings Inc.,SRHI.TO,Financial Services
+SmartCentres Real Estate Investment Trust,SRU-UN.TO, Real Estate 
+SIR Royalty Income Fund,SRV-UN.TO,Consumer Products & Services
+Storm Resources Ltd.,SRX.TO, Oil & Gas 
+Sandstorm Gold Ltd.,SSL.TO, Mining 
+SSR Mining Inc.,SSRM.TO, Mining 
+Student Transportation Inc.,STB.TO,Industrial Products & Services
+STEP Energy Services Ltd.,STEP.TO, Industrial Products & Services 
+Stantec Inc.,STN.TO,Industrial Products & Services
+Suncor Energy Inc.,SU.TO, Oil & Gas 
+Solium Capital Inc.,SUM.TO, Technology 
+"Silver Bull Resources, Inc.",SVB.TO, Mining 
+Silvercorp Metals Inc.,SVM.TO, Mining 
+Sierra Wireless Inc.,SW.TO, Technology 
+Sunwah International Limited,SWH.TO,Financial Services
+Stornoway Diamond Corporation,SWY.TO, Mining 
+Synex International Inc.,SXI.TO,Clean Technology
+Supremex Inc.,SXP.TO,Consumer Products & Services
+TELUS Corporation,T.TO,Comm & Media
+TAG Oil Ltd.,TAO.TO, Oil & Gas 
+Taiga Building Products Ltd.,TBL.TO,Industrial Products & Services
+Tucows Inc.,TC.TO, Technology 
+Tricon Capital Group Inc.,TCN.TO,Financial Services
+TECSYS Inc.,TCS.TO, Technology 
+Trican Well Service Ltd.,TCW.TO, Industrial Products & Services 
+Trinidad Drilling Ltd.,TDG.TO, Industrial Products & Services 
+Toscana Energy Income Corporation,TEI.TO, Oil & Gas 
+Tellza Communications Inc.,TEL.TO,Comm & Media
+Timbercreek Financial Corp.,TF.TO,Financial Services
+TFI International Inc.,TFII.TO,Industrial Products & Services
+TransGlobe Energy Corporation,TGL.TO, Oil & Gas 
+TeraGo Inc.,TGO.TO,Comm & Media
+Teranga Gold Corporation,TGZ.TO, Mining 
+Theratechnologies Inc.,TH.TO,Biotechnology
+Tahoe Resources Inc.,THO.TO, Mining 
+Titan Mining Corporation,TI.TO, Mining 
+Toromont Industries Ltd.,TIH.TO,Industrial Products & Services
+Taseko Mines Limited,TKO.TO, Mining 
+TearLab Corporation,TLB.TO,Healthcare Services and Supplies
+Talon Metals Corp.,TLO.TO, Mining 
+Tembec Inc.,TMB.TO,Clean Technology
+Titan Medical Inc.,TMD.TO,Health Care Technology
+Treasury Metals Inc.,TML.TO, Mining 
+Trilogy Metals Inc.,TMQ.TO, Mining 
+TMAC Resources Inc.,TMR.TO, Mining 
+TransAtlantic Petroleum Ltd.,TNP.TO, Oil & Gas 
+True North Commercial Real Estate Investment Trust,TNT-UN.TO, Real Estate 
+Tanzanian Royalty Exploration Corporation,TNX.TO, Mining 
+TORC Oil & Gas Ltd.,TOG.TO, Oil & Gas 
+TSO3 Inc.,TOS.TO,Healthcare Facilities and Equipment
+Total Energy Services Inc.,TOT.TO, Industrial Products & Services 
+Tourmaline Oil Corp.,TOU.TO, Oil & Gas 
+Spin Master Corp.,TOY.TO,Consumer Products & Services
+Ten Peaks Coffee Company Inc.,TPK.TO,Consumer Products & Services
+Tethys Petroleum Limited,TPL.TO, Oil & Gas 
+Trillium Therapeutics Inc.,TRIL.TO,Biotechnology
+Trilogy International Partners Inc.,TRL.TO,Comm & Media
+Turquoise Hill Resources Ltd.,TRQ.TO, Mining 
+Transat A.T. Inc.,TRZ.TO,Consumer Products & Services
+Torstar Corporation,TS-B.TO,Comm & Media
+The Stars Group Inc.,TSGI.TO, Technology 
+Tree Island Steel Ltd.,TSL.TO,Industrial Products & Services
+Trisura Group Ltd.,TSU.TO,Financial Services
+Trevali Mining Corporation,TV.TO, Mining 
+TVA Group Inc.,TVA-B.TO,Comm & Media
+Tamarack Valley Energy Ltd.,TVE.TO, Oil & Gas 
+TerraVest Capital Inc.,TVK.TO, Industrial Products & Services 
+TWC Enterprises Limited,TWC.TO,Consumer Products & Services
+Torex Gold Resources Inc.,TXG.TO, Mining 
+Touchstone Exploration Inc.,TXP.TO, Oil & Gas 
+Trez Capital Senior Mortgage Investment Corporation,TZS.TO,Financial Services
+Trez Capital Mortgage Investment Corporation,TZZ.TO,Financial Services
+Uranium Participation Corporation,U.TO,Financial Services
+UEX Corporation,UEX.TO, Mining 
+Domtar Corporation,UFS.TO,Consumer Products & Services
+Uni-Select Inc.,UNS.TO,Consumer Products & Services
+UrtheCast Corp.,UR.TO, Technology 
+Ur-Energy Inc.,URE.TO, Mining 
+Americas Silver Corporation,USA.TO, Mining 
+U3O8 Corp.,UWE.TO, Mining 
+VersaBank,VB.TO,Financial Services
+VBI Vaccines Inc.,VBV.TO,Pharmaceuticals
+Vecima Networks Inc.,VCM.TO, Technology 
+Vermilion Energy Inc.,VET.TO, Oil & Gas 
+Village Farms International Inc.,VFF.TO,Clean Technology
+Vista Gold Corp.,VGZ.TO, Mining 
+Seven Generations Energy Ltd.,VII.TO, Oil & Gas 
+Valeura Energy Inc.,VLE.TO, Oil & Gas 
+Velan Inc.,VLN.TO,Industrial Products & Services
+5N Plus Inc.,VNP.TO,Clean Technology
+Valeant Pharmaceuticals International Inc.,VRX.TO,Pharmaceuticals
+"Waste Connections, Inc.",WCN.TO,Industrial Products & Services
+Wesdome Gold Mines Ltd.,WDO.TO, Mining 
+Canopy Growth Corporation,WEED.TO,Medical Marijuana
+Western Forest Products Inc.,WEF.TO,Industrial Products & Services
+WesternOne Inc.,WEQ.TO,Industrial Products & Services
+Wall Financial Corporation,WFC.TO, Real Estate 
+West Fraser Timber Co. Ltd.,WFT.TO,Industrial Products & Services
+Wellgreen Platinum Ltd.,WG.TO, Mining 
+WPT Industrial Real Estate Investment Trust,WIR-U.TO, Real Estate 
+WestJet Airlines Ltd.,WJA.TO,Industrial Products & Services
+Wajax Corporation,WJX.TO,Industrial Products & Services
+Wallbridge Mining Company Limited,WM.TO, Mining 
+Winpak Ltd.,WPK.TO,Industrial Products & Services
+Wheaton Precious Metals Corp.,WPM.TO, Mining 
+Westport Fuel Systems Inc.,WPRT.TO,Clean Technology
+Western Energy Services Corp.,WRG.TO, Industrial Products & Services 
+Western Copper and Gold Corporation,WRN.TO, Mining 
+Western Resources Corp.,WRX.TO, Mining 
+WSP Global Inc.,WSP.TO,Industrial Products & Services
+Westshore Terminals Investment Corporation,WTE.TO,Industrial Products & Services
+TMX Group Limited,X.TO,Financial Services
+GoldMoney Inc.,XAU.TO,Financial Services
+exactEarth Ltd.,XCT.TO, Technology 
+Xtreme Drilling Corp.,XDC.TO, Industrial Products & Services 
+Exco Technologies Limited,XTC.TO,Industrial Products & Services
+Xtra-Gold Resources Corp.,XTG.TO, Mining 
+Yellow Pages Limited,Y.TO,Comm & Media
+Yangarra Resources Ltd.,YGR.TO, Oil & Gas 
+Yamana Gold Inc.,YRI.TO, Mining 
+Zargon Oil & Gas Ltd.,ZAR.TO, Oil & Gas 
+ZCL Composites Inc.,ZCL.TO, Industrial Products & Services 
+Zymeworks Inc.,ZYME.TO,Biotechnology
+Sleep Country Canada Holdings Inc.,ZZZ.TO,Consumer Products & Services
