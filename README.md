@@ -5,16 +5,16 @@
 Let's look at some use cases where this model will be useful
   
 ### Use Case 1
-You want to invest in a certain set of stocks, but you are waiting for the right time and price. However, you do not know what is a good price for the stock is or if it is the right time to buy.
+You want to invest in a certain set of stocks and is waiting for the right time and price. However, you do not know what is a good price for the stock is or if it is the right time to buy.
  
 ### Use Case 2
-You want to invest in a certain set of stocks, but you are waiting for the right time and price. In this case, you do not keep up with the stock market and often miss low or high prices which may convince you to buy a stock.
+You want to invest in a certain set of stocks and is waiting for the right time and price. In this case, you do not keep up with the stock market and often miss low or high prices which may convince you to buy a stock.
     
 ### Use Case 3
-You want to gain exposure to the market or diversify your portfolio. However, in order to find new trending stocks, you have to do a lot of manual work and research.
+You want to gain exposure to the market or diversify your portfolio. In order to find new trending stocks, you have to do a lot of manual work and research.
     
 ### Use Case 4
-You recently came across some money and are looking to invest. After a period of inactivity in the stock market, you want to find out which stocks have dropped or increased in price in the past few months. You want to narrow down the number of stocks to research.
+You recently came across some money and are looking to invest. After a period of inactivity in the stock market, you want to find out which stocks have dropped or increased in price in the past few months to narrow down the number of stocks to research.
     
 ### Summing it Up
   
